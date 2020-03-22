@@ -7,7 +7,7 @@
 
 
 
-function submitData(name, email_){
+function submitData(name, email){
  return fetch("http://localhost:3000/users", {
   method: "POST",
   headers: {
