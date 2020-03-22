@@ -19,10 +19,7 @@ let submitData = {
 }
 
 function submitData(_){
-  
-}
-  
-fetch("http://localhost:3000/users", submitData)
+ return fetch("http://localhost:3000/users", submitData)
 .then(function(response) {
   return response.json();
 })
@@ -32,7 +29,10 @@ fetch("http://localhost:3000/users", submitData)
 .catch(function(error){
   alert("Error")
   console.log(error.message);
-});
+}); 
+}
+  
+
 
 //On a successful POST request, expect the server to respond with a [Response][response] object. Just like we saw earlier in the dog //, the body property of this response will contain the data from the POST request along with a newly assigned id.
 
