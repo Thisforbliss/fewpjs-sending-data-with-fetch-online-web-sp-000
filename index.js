@@ -23,7 +23,7 @@ fetch("http://localhost:3000/users", submitData)
   return response.json();
 })
   .then(function(object){
-  console.log(object.id);
+  console.log(object);
 })
 .catch(function(error){
   alert("Error")
