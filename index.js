@@ -18,7 +18,9 @@ let submitData = {
   body: JSON.stringify(formData)
 }
 
-fetch("http://localhost:3000/users", submitData)
+function submitData(
+  
+fetch("http://localhost:3000/users", submitData))
 .then(function(response) {
   return response.json();
 })
