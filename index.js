@@ -5,7 +5,7 @@
 //A body with the name and email passed in as arguments to submitData. These should be assigned to name and email keys within an obje//Thi//object should then be stringified.
 
 let formData = {
-  name: "Malcolm",
+  name: "Malcolm", ${name}
   email: "echelon1089@gmail.com"
 };
 
@@ -18,7 +18,7 @@ let submitData = {
   body: JSON.stringify(formData)
 }
 
-function submitDate(_){
+function submitData(name, email_){
  return fetch("http://localhost:3000/users", submitData)
 .then(function(response) {
   return response.json();
