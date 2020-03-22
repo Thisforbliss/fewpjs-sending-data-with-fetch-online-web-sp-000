@@ -23,6 +23,7 @@ function submitData(name, email){
   return response.json();
 })
   .then(function(object){
+    document.body.innerHTML = object
   console.log(object);
 })
 .catch(function(error){
